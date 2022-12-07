@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Spotify Circular";
+  src: url("/@root/fonts/CircularSpotifyText-Book.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Spotify Circular";
+  src: url("/@root/fonts/CircularSpotifyText-BookItalic.otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Spotify Circular";
+  src: url("/@root/fonts/CircularSpotifyText-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Spotify Circular";
+  src: url("/@root/fonts/CircularSpotifyText-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Spotify Circular";
+  src: url("/@root/fonts/CircularSpotifyText-BoldItalic.otf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Spotify Circular";
+  src: url("/@root/fonts/CircularSpotifyText-Black.otf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    font-family: "Spotify Circular", sans-serif;
+  }
+  .container-prose {
+    @apply max-w-prose mx-auto w-full px-8;
+  }
+
+  .typo {
+    @apply w-full prose prose-neutral prose-headings:text-white text-white;
+  }
+
+  .content p {
+    @apply text-[18px] mb-4 leading-[1.6];
+  }
+
+  .content h2 {
+    @apply text-3xl font-bold mb-2;
+  }
+}

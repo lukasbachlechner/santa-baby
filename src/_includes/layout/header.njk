@@ -1,0 +1,43 @@
+{% set links = ['News', 'Podcast', 'Company Info', 'Communitites'] %}
+<header class="px-[60px] flex items-center justify-between bg-background h-[81px]">
+    <div>
+        <a href="/" class="inline-block py-[17px]">
+            {% include 'logo.njk' %}
+        </a>
+    </div>
+    <div class="text-white">
+        <ul class="flex">
+            {% for item in links %}
+                <li class="px-[28px] py-[32px] flex items-center font-black">
+                    {{ item }}
+                </li>
+            {% endfor %}
+            <li class="py-[28px] px-[45px] ">
+                <a
+                    data-toggle="search"
+                    tabindex="0"
+                    aria-controls="search"
+                    data-is-focus="false"
+                    data-yeti-box="search"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    id="llqwou-dd-anchor">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" class="w-[20px] h-[20px]">
+                        <path
+                            fill="#FFF"
+                            class="fill"
+                            fill-rule="evenodd"
+                            d="M17.743 16.329l8.864 8.863-1.415 1.415-8.863-8.864A9.959 9.959 0 0 1 10 20C4.477 20 0 15.523 0 10S4.477 0 10 0s10
+                                4.477 10 10a9.959 9.959 0 0 1-2.257 6.329zM10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="flex items-center justify-center leading-none">
+                <a
+                    href="#"
+                    class="text-[15px] font-black bg-spotify text-background py-[0.7rem] px-4 border border-spotify rounded-full ">
+                    Get Spotify</a>
+            </li>
+        </ul>
+    </div>
+</header>
