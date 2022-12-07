@@ -1,11 +1,11 @@
 {% set links = ['News', 'Podcast', 'Company Info', 'Communitites'] %}
-<header class="px-[60px] flex items-center justify-between bg-background h-[81px]">
-    <div>
-        <a href="/" class="inline-block py-[17px]">
+<header class="px-8 md:px-[60px] flex items-center justify-between bg-background h-[81px]">
+    <div class="w-full flex items-center justify-center lg:block lg:w-auto">
+        <a href="/" class="py-[17px] text-left">
             {% include 'logo.njk' %}
         </a>
     </div>
-    <div class="text-white">
+    <div class="text-white hidden lg:block">
         <ul class="flex">
             {% for item in links %}
                 <li class="px-[28px] py-[32px] flex items-center font-black">
