@@ -4,7 +4,7 @@ const slinkity = require("slinkity");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(slinkity.plugin, slinkity.defineConfig({}));
-  eleventyConfig.addPassthroughCopy("static");
+  eleventyConfig.addPassthroughCopy("public");
 
   eleventyConfig.setTemplateFormats(["md", "njk", "liquid"]);
   eleventyConfig.addPlugin(ErrorOverlay);
